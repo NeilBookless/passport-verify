@@ -3,21 +3,21 @@ passport-verify
 
 [![Build Status](https://travis-ci.org/alphagov/passport-verify.svg?branch=master)](https://travis-ci.org/alphagov/passport-verify)
 
-Passport-Verify is a passport.js plugin for authenticating with Verify Hub using passport.js and prototype-0 of Verify Service Provider.
+Passport-Verify is a passport.js plugin node library, used during authentication between the Verify Hub and the Verify Service Provider prototype-0.
 
 Status
 ---------------
 
-**This project is in the discovery phase and is not ready for use in production.**
+**NOTE: This is a pre-production Discovery Phase project.**
 
 Terminology
 ---------------
 
- * _Identity Provider_ is a Service that can authenticate users
- * _Relying party_ is a Service that needs to authenticate users
- * _Verify Hub_ acts as an Identity Provider for Relying Parties
- * _Verify Service Provider_ is a Service that consumes and produces SAML messages that can be used to communicate with Verify Hub https://github.com/alphagov/verify-service-provider/tree/master/prototypes/prototype-0/verify-service-provider
- * _Passport.js_ is a node js library that provides a generic authentication framework for various authentication providers. http://passportjs.org/
+ * _Identity Provider:_        A Service able to authenticate users
+ * _Relying Party:_            A Service with the need to authenticate users
+ * _Verify Hub:_               Acts as an Identity Provider for Relying Parties
+ * _Verify Service Provider:_  Software installed within the Relying Party's Service domain to handle all SAML _AuthnRequests_ and _samlresponse_ message conversions, when communicating with the Verify Hub.  Refer: https://github.com/alphagov/verify-service-provider/tree/master/prototypes/prototype-0/verify-service-provider
+ * _Passport.js:_              A node js library used to provide a generic authentication framework for authentication providers. http://passportjs.org/
 
 Usage
 -----
